@@ -18,18 +18,24 @@ body {
 	width: 500px;
 	height: 300px;
 }
-  
+
 #movieTitle {
 	color: white;
 	margin-top: -20px;
 	margin-left: 10px;
 }
 
-.movies { 
-   width: 300px;
-   height: 400px;
-	
-} 
+.movies {
+	width: 300px;
+	height: 380px;
+	margin-top: 40px;
+
+}
+
+.warningSign {
+	text-align: center;
+	color: white;
+}
 
 .gif_description {
 	margin-top: 20px;

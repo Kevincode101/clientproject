@@ -21,6 +21,12 @@ $(document).ready(function() {
 			method: "GET",
 			success: function(response) {
 				$(".giphyTitle").html("<h1 id='movieTitle'>" + userInput + "</h1>");
+				if (response.Response == "False") {
+					console.log("I work");
+					$('.gallery').append(
+						'<p class="warningSign">' + "No movie was found with those characters..." + '</p>'
+					);
+				}
 				for (var i = 0; i < response.Search.length; i++) {
 					if (response.Search[i].Poster !== "N/A") {
 						$('.gallery').append(
