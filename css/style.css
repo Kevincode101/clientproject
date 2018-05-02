@@ -19,11 +19,17 @@ body {
 	height: 300px;
 }
   
-#movieTitles {
+#movieTitle {
 	color: white;
 	margin-top: -20px;
 	margin-left: 10px;
 }
+
+.movies { 
+   width: 300px;
+   height: 400px;
+	
+} 
 
 .gif_description {
 	margin-top: 20px;
