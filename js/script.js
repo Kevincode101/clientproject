@@ -5,7 +5,7 @@
 /* global $ */
 
 $(document).ready(function() {
-
+	console.log("document ready")
 	$("#srch-term").keyup(function(event) {
 		if (event.keyCode === 13) {
 			$("#submit").click();
@@ -13,6 +13,7 @@ $(document).ready(function() {
 	});
 
 	$("#submit").click(function() {
+		console.log("clicked")
 		$(".gallery").empty();
 		var userInput = $('#srch-term').val();
 		var url = "https://omdbapi.com?apikey=90d4b10a&s=" + userInput.toLowerCase();
@@ -26,6 +27,7 @@ $(document).ready(function() {
 					$('.gallery').append(
 						'<p class="warningSign">' + "No movie was found with those characters..." + '</p>'
 					);
+
 				}
 				for (var i = 0; i < response.Search.length; i++) {
 					if (response.Search[i].Poster !== "N/A") {
