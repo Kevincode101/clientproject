@@ -11,12 +11,12 @@ $(document).ready(function() {
 			$("#submit").click();
 		}
 	});
-
+	
 	$("#submit").click(function() {
 		console.log("clicked")
 		$(".gallery").empty();
 		var userInput = $('#srch-term').val();
-		var url = "https://omdbapi.com?apikey=90d4b10a&s=" + userInput.toLowerCase();
+		var url = "https://www.theimdbapi.org/api/find/movie?"+ userInput.toLowerCase();
 		$.ajax({
 			url: url,
 			method: "GET",
