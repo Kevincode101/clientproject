@@ -19,6 +19,12 @@ body {
 	height: 300px;
 }
 
+.wrap {
+	height: 450px;
+	color:white;
+	font-size:16px;
+}
+
 #movieTitle {
 	color: white;
 	margin-top: -20px;
