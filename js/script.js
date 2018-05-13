@@ -16,7 +16,7 @@ $(document).ready(function() {
 		console.log("clicked")
 		$(".gallery").empty();
 		var userInput = $('#srch-term').val();
-		var url = "https://omdbapi.com?apikey=90d4b10a&s=" + userInput.toLowerCase();
+		var url = "https://omdbapi.com?apikey=90d4b10a&s=" + userInput.toLowerCase() + "type=movie";
 		$.ajax({
 			url: url,
 			method: "GET",
